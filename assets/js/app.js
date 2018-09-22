@@ -11,6 +11,12 @@ $(document).ready( ()=> {
             scrollTop: ($($.attr(this, 'href')).offset().top - 75) 
         }, 500);
     });
+    $('.custom-progress-bar-container').each(function(){
+        let bar = $(this).find('.custom-progress-bar')
+        bar.animate({
+			width:bar.attr("data-percent")
+		},1000);
+	});
       $(window).scroll((event) => {
         var scroll = $(window).scrollTop();
         // Do something
