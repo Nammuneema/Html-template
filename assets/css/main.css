@@ -317,19 +317,18 @@ body {
 
 .my-skills-section {
     background: url(/assets/images/code-wallpaper-compressor.jpeg);
-    height: 100vh;
+    height: fit-contents;
     width: 100%;
     background-size: cover;
-    overflow: hidden;
     align-items: center;
     text-align: center;
     color: white;
-    overflow: scroll
+    overflow: visible;
 }
 
 .my-skill-transparent {
     position: relative;
-    height: inherit;
+    height: fit-content;
     background: rgba(0, 0, 0, 0.85);
 }
 
