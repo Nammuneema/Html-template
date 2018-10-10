@@ -397,5 +397,84 @@ body {
 
 .skill-item-container:hover{
     animation: bounce 1s;
+}
 
+.social{
+
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    margin:40px;
+}
+
+ul.social-ico-list{
+    position: relative;
+    display: flex;
+}
+
+.social-ico-list li{
+    position: relative;
+    list-style: none;
+    margin:30px;
+    width:60px;
+    height: 60px;
+    /* transform: rotate(-30deg) skew(30deg); */
+    /* background: #333; */
+}
+
+.social-ico-list li span{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px; 
+    border-radius: 5px;
+}
+
+.social-ico-list li:hover span{
+    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.social-ico-list li:hover span:nth-child(5){
+    transform: translate(20px,-20px);
+    opacity: 1;
+}
+
+.social-ico-list li:hover span:nth-child(4){
+    transform: translate(15px,-15px);
+    opacity: .8;
+}
+.social-ico-list li:hover span:nth-child(3){
+    transform: translate(10px,-10px);
+    opacity: .6;
+}
+.social-ico-list li:hover span:nth-child(2){
+    transform: translate(5px,-5px);
+    opacity: .4;
+}
+.social-ico-list li:hover span:nth-child(1){
+    transform: translate(0px,0px);
+    opacity: .2;
+}
+
+.facebook-color span {
+    background: #3b5999 !important;
+}
+
+.ln-color span{
+    background: #0077b5;
+}
+
+.insta-color span{
+    background: #e4405f;
+}
+
+.git-color span{
+    background: #24292e;
 }
