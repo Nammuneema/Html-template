@@ -7,7 +7,7 @@
 .custom-nav-container {
     position: fixed;
     width: 100%;
-    height: 60px;
+    min-height: 60px;
     z-index: 100;
     background: rgba(0, 0, 0, 0.795);
     /* display: none; */
@@ -40,7 +40,7 @@
 
 .custom-title-container {
     color: white;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .custom-nav-item {
@@ -48,8 +48,8 @@
 }
 
 .custom-nav-item-container {
-    /* margin: 10px; */
-    padding: 20px;
+    margin: 10px;
+    padding: 10px 20px;
     float: right;
 }
 
@@ -236,7 +236,7 @@ body {
     bottom: 13%;
     width: fit-content;
     left: 50%;
-    transform: translateX(50%);
+    transform: translateX(-50%);
     /* margin: 0px auto; */
     text-align: center;
     align-items: center;
@@ -335,7 +335,7 @@ body {
 }
 
 .skill-row{
-    margin-bottom: 20px;
+    
 }
 
 .skill-heading {
@@ -371,6 +371,7 @@ body {
     text-align: center;
     background: rgba(255, 255, 255, 0.38);
     padding: 20px;
+    margin: 10px 0
 }
 
 .icon-container i {
@@ -412,12 +413,13 @@ body {
 ul.social-ico-list{
     position: relative;
     display: flex;
+    padding: 0
 }
 
 .social-ico-list li{
     position: relative;
     list-style: none;
-    margin:30px;
+    margin:15px;
     width:60px;
     height: 60px;
     /* transform: rotate(-30deg) skew(30deg); */
