@@ -10,7 +10,11 @@ $(document).ready( ()=> {
             $('#menu-btn').removeClass('header-display');
             $('#menu-btn').on('click', (e) => { 
                 e.preventDefault();
-                $('#header').toggleClass('responsive-header');
+                if ($("#header").hasClass('responsive-header')) { 
+                    $('#header').removeClass('responsive-header');
+                } else {
+                    $('#header').addClass('responsive-header');
+                }
             });
         } else {
             $('#header').removeClass('responsive-header header-display');
@@ -39,9 +43,11 @@ $(document).ready( ()=> {
         const totalHeight = $(window).innerHeight();
         const activeHeight = totalHeight * .80;
         if (scroll >= activeHeight) {
-        $('#nav-bar').removeClass('custom-nav-hidden');  
+            $('#header').removeClass('responsive-header');
+            $('#nav-bar').removeClass('custom-nav-hidden'); 
         } else{ 
             $('#nav-bar').addClass('custom-nav-hidden');
+            
         }
     });
     $('.js-tilt').tilt({
